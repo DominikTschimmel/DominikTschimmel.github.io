@@ -1,21 +1,8 @@
 
 	function HideOnClick() {
-  	var x = document.getElementById("navigation");
-  	var h = 0;
-  	
+  	var x = document.getElementById("navigation");  	
   	if (x.style.display === "none") {
-    x.style.display = "block";
-    
-    x.style.maxHeight = h +"px";
-   
-   while (h<500)
-   {
-   h = h +20;
-   setTimeout(function(){ x.style.maxHeight =  h + "px"; }, 1000);	 
-   } 
-	
-	 
-	 
+    x.style.display = "block";	 
   	} else {
     x.style.display = "none";
   	}
@@ -30,9 +17,6 @@
   	if (x >  1050) {
     y.style.display = "block";
   	} 
-  	else {
-    y.style.display = "none";
-  	}
 	}
 
 window.addEventListener('resize', ResetMenu);

@@ -17,9 +17,6 @@
   	if (x >  1050) {
     y.style.display = "block";
   	} 
-  	else {
-    y.style.display = "none";
-  	}
 	}
 
 window.addEventListener('resize', ResetMenu);

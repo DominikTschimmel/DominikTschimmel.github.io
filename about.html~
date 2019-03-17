@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Dominik Tschimmel </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>  
+	 
+	 
+</head>
+
+
+<body>
+
+
+
+
+<header>
+<h1 class="header_name">Dominik Tschimmel</h1>
+<h1 class="header_menu"  onclick="HideOnClick()">&#9776;</h1>
+</header>
+
+
+<div class="content_box">
+
+
+<ul id ="navigation">
+	<li  class="navigation_item"  ><a class="navigation_link"  href="index.html">  Home </a></li>
+  <li  class="navigation_item"><a class="navigation_link" href="notes.html"> Notes </a></li>
+	<li  class="navigation_item"  id="active_link"><a  class="navigation_link"href="about.html"> About </a></li>
+</ul>
+
+
+
+
+
+
+
+
+<div class="main_content">
+
+<p style="padding-bottom: 10px;"> Throughout my preparations for the exams of the master's degree in physics, I have been summarizing some subjects in LaTex documents. 
+After some time, the summaries became more or less extensive notes, containing some of the major topics for the respective subject. 
+However, these notes should not be mistaken with introductory or complete textbooks/ lecture notes about the subject. </p>
+
+<p>During the literature research for my bachelor' s thesis, I encountered numerous pay walls and membership restrictions. 
+As much as I do understand the need for proper payment, I myself believe that science has to be available for everyone. 
+For that reason I have decided to upload the notes that have seen enough care to have proper (enough) citation.</p>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

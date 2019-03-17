@@ -107,7 +107,15 @@ font-weight: bold;
 }
 
 
-
+.navigation_item{
+	
+	color: rgb(250, 250, 250);
+	display: block;
+	
+	cursor: pointer;
+	font-size: 18px;
+	text-decoration: none;
+}
 
 
 
@@ -122,14 +130,7 @@ font-weight: bold;
 
 }
 
-.navigation_link{
-color: rgb(250, 250, 250);
 
-font-size: 18px;
-cursor: pointer;
-
-text-decoration: none;
-}
 
 
 
@@ -140,8 +141,8 @@ text-decoration: none;
 @media screen and (min-width: 1051px){
 
 .content_box{
-padding-top: 100px;
-width: 1050px;
+	padding-top: 100px;
+	width: 1050px;
 }
 
 .main_content{
@@ -204,12 +205,8 @@ width: 1050px;
 }
 
 .navigation_item{
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	margin-top: 20px:;
+	margin 20px;
 	padding: 20px 10px; 
-	
 	text-align: center;
 }
 

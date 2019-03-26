@@ -16,6 +16,3 @@
   	}   
 	}
 	
-	window.onload = function () { HideMenu();  };	
-	  	
-

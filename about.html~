@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>  
-	 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	 
 </head>
 
@@ -54,7 +54,16 @@ For that reason I have decided to upload the notes that have seen enough care to
 </div>
 
 
-
+<script>
+var x = document.documentElement.clientWidth
+var y = document.getElementById("navigation");
+if (x <  1050) {
+    y.style.display = "none";
+  	}  
+else {
+	y.style.display = "block";
+}
+</script>
 
 </body>
 

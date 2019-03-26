@@ -63,6 +63,15 @@
 </div>
 
 
+<script>
+if (x <  1050) {
+    y.style.display = "none";
+  	}  
+else {
+	y.style.display = "block";
+}
+</script>
+
 </body>
 
 </html>

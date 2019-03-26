@@ -8,13 +8,6 @@
   	}
 	}
 	
-	function HideMenu() {
-	var x = window.innerWidth
-	var y = document.getElementById("navigation");
-	if (x <  1050) {
-    y.style.display = "none";
-  	}   
-	}
 	
 
 

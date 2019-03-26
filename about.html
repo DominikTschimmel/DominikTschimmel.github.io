@@ -54,8 +54,16 @@ For that reason I have decided to upload the notes that have seen enough care to
 </div>
 
 
-<script> HideMenu() </script>
-
+<script>
+var x = window.innerWidth
+var y = document.getElementById("navigation");
+if (x <  1050) {
+    y.style.display = "none";
+  	}  
+else {
+	y.style.display = "block";
+}
+</script>
 
 </body>
 

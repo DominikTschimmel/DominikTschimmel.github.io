@@ -8,8 +8,6 @@
   	}
 	}
 	
-	function HideMenu() {
-	var y = document.getElementById("navigation");
-   y.style.display = "block"; 
-	}
 	
+
+

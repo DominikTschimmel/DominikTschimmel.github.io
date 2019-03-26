@@ -110,7 +110,7 @@ font-weight: bold;
 .navigation_item{
 	
 	color: rgb(250, 250, 250);
-
+	display: block;
 	
 	cursor: pointer;
 	font-size: 18px;

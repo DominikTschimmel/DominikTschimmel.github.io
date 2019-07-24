@@ -6,7 +6,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>  
 	 
 	 
 </head>
@@ -14,25 +13,23 @@
 
 <body>
 
+<div class="container">
+
+
+<div id ="navigation">
+		<a	class="navigation_item"  id="active_link"  href="index.html">  Home </a>
+		<a	class="navigation_item"  href="contact.html">  Contact </a>
+		<a class="navigation_item"  href="notes.html">   Notes </a>
+	 	<a class="navigation_item"  href="about.html">   About </a>
+
+</div>
 
 
 
-<header>
-<h1 class="header_name">Dominik Tschimmel</h1>
-<h1 class="header_menu"  onclick="HideOnClick()">&#9776;</h1>
-</header>
-
-
-<div class="content_box">
 
 
 
-<ul id ="navigation">
-	<li>  <a	class="navigation_item"  id="active_link"  href="index.html">  Home </a></li>
-	<li>  <a	class="navigation_item"  href="contact.html">  Contact </a></li>
-  <li>   <a class="navigation_item"  href="notes.html">   Notes </a></li>
-	<li>  <a class="navigation_item"  href="about.html">   About </a></li>
-</ul>
+
 
 
 
@@ -41,27 +38,23 @@
 
 
 <div class="main_content">
-<img src="images/notebook1.jpg"style=" display:block; width:70%;margin: auto; padding-bottom: 20px;"> 
+<img src="images/notebook1.jpg"style=" display:block; width:100%;margin: auto; padding-bottom: 20px;"> 
 
 
 I am a student of physics, currently at the beginning of my master thesis, at the university of Cologne. 
 Recently I have been interested in K-theory of C*-algebras. In general my interests are in mathematical physics and mathematics. 
 </div>
 
+
+
+
+<footer id="Foot">
+<a class="Foot_text">  Hier ist der Text </a>
+</footer>
+
+
 </div>
 
-
-
-<script>
-var x = document.documentElement.clientWidth
-var y = document.getElementById("navigation");
-if (x <  1050) {
-    y.style.display = "none";
-  	}  
-else {
-	y.style.display = "block";
-}
-</script>
 
 
 </body>

@@ -14,25 +14,19 @@
 
 <body>
 
+<div id ="navigation">
+		<a	class="navigation_item"  id="active_link"  href="index.html">  Home </a>
+		<a	class="navigation_item"  href="contact.html">  Contact </a>
+		<a class="navigation_item"  href="notes.html">   Notes </a>
+	 	<a class="navigation_item"  href="about.html">   About </a>
+
+</div>
 
 
 
-<header>
-<h1 class="header_name">Dominik Tschimmel</h1>
-<h1 class="header_menu"  onclick="HideOnClick()">&#9776;</h1>
-</header>
 
+<div class="main_content">
 
-<div class="content_box">
-
-
-
-<ul id ="navigation">
-	<li>  <a	class="navigation_item"  href="index.html">  Home </a></li>
-	<li>  <a	class="navigation_item"  id="active_link"  href="contact.html">  Contact </a></li>
-  <li>   <a class="navigation_item"  href="notes.html">   Notes </a></li>
-	<li>  <a class="navigation_item"  href="about.html">   About </a></li>
-</ul>
 
 
 
@@ -48,25 +42,13 @@
 <div style=" margin-bottom: 20px;">50937 Köln, Germany  </div>
 
 <div>  <span style="font-weight: bold; margin-right: 20px;">Phone:</span>  1032     </div>
-<div>  <span style="font-weight: bold; margin-right: 20px;">E-mail:</span>  <a href="mailto:d.tschimmel@smail.uni-koeln.de" style="padding-left: 20px;">d.tschimmel@smail.uni-koeln.de</a>    </div>
+<div>  <span style="font-weight: bold; margin-right: 20px;">E-mail:</span>  <a href="mailto:d.tschimmel@smail.uni-koeln.de">d.tschimmel@smail.uni-koeln.de</a>    </div>
   
 </div>
 
 </div>
 
 
-
-
-<script>
-var x = document.documentElement.clientWidth
-var y = document.getElementById("navigation");
-if (x <  1050) {
-    y.style.display = "none";
-  	}  
-else {
-	y.style.display = "block";
-}
-</script>
 
 
 

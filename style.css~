@@ -16,7 +16,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.js-loading{
+   transition: none !important;
 
+}
 
 
 

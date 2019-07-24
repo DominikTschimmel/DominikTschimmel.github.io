@@ -13,7 +13,7 @@
 <body>
 
 <div id ="navigation">
-		<a	class="navigation_item"  id="active_link"  href="index.html">  Home </a>
+		<a	class="navigation_item"   href="index.html">  Home </a>
 		<a	class="navigation_item"  href="contact.html">  Contact </a>
 		<a class="navigation_item"  href="notes.html">   Notes </a>
 	 	<a class="navigation_item"  href="about.html">   About </a>
@@ -28,7 +28,7 @@
 
 
 
-<div class="main_content">
+<div class="main_content"">
 
 <div style="font-weight: bold; margin-bottom: 20px;"> Institut für Theoretische Physik </div>
 <div> Universität zu Köln  </div>

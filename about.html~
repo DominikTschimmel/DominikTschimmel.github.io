@@ -7,15 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>  
-	 
-	<script type="text/javascript">
-	document.body.classList.add('js-loading');
-
-	window.addEventListener("load", showPage);
-
-	unction showPage() {
-  	document.body.classList.remove('js-loading');	 
-	</script>
 </head>
 
 

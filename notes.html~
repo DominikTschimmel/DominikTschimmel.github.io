@@ -6,15 +6,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	 
+	<script type="text/javascript">
+	document.body.classList.add('js-loading');
 
-<script type="text/javascript">
-	$(window).load(function() {
-		$(".se-pre-con").fadeOut("slow");;
-	});
-</script>
-		 
+	window.addEventListener("load", showPage);
+
+	unction showPage() {
+  	document.body.classList.remove('js-loading');	 
+	</script>
+</head>
 
 
 <body>

@@ -16,7 +16,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.js-loading{
+   transition: none !important;
+   background-color: rgb(60, 60, 60);
+   display: block;
 
+}
 
 
 

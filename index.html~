@@ -6,6 +6,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<script type="text/javascript">
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+		 
 	 
 	 
 </head>
@@ -13,7 +23,8 @@
 
 <body>
 
-<div class="container">
+<div class="se-pre-con"></div>
+
 
 
 <div id ="navigation">
@@ -48,12 +59,9 @@ Recently I have been interested in K-theory of C*-algebras. In general my intere
 
 
 
-<footer id="Foot">
-<a class="Foot_text">  Hier ist der Text </a>
-</footer>
 
 
-</div>
+
 
 
 

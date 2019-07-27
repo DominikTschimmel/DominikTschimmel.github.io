@@ -12,15 +12,12 @@
 
 <body>
 
+
 <div id ="navigation">
 		<a	class="navigation_item"   href="index.html">  Home </a>
 		<a	class="navigation_item"  href="contact.html">  Contact </a>
 		<a class="navigation_item"  href="notes.html">   Notes </a>
-	 	<a class="navigation_item"  href="about.html">   About </a>
-
 </div>
-
-
 
 
 <div id="title">

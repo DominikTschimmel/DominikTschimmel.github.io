@@ -12,36 +12,44 @@
 <body>
 
 <div id ="navigation">
-		<a	class="navigation_item"  href="index.html">  Home </a>
+		<a	class="navigation_item"   href="index.html">  Home </a>
 		<a	class="navigation_item"  href="contact.html">  Contact </a>
 		<a class="navigation_item"  href="notes.html">   Notes </a>
-	 	<a class="navigation_item"  href="about.html">   About </a>
+</div>
 
+
+<div id="title">
+Notes
 </div>
 
 
 
-
-<div class="main_content">
-
-
+<div id="main_content">
+<div id="main_image">
+<img src="images/notes.jpg" style="width:100%; "> 
+</div>
 
 
 
 <ul id="notes_list">
 	<li> <a href="files/aqm.pdf" class="notes_link"> Advanced quantum mechanics </a> </li>	
-	<p style="padding-top: 20px; padding-bottom: 40px">
-	
-	In introductory quantum mechanics, only single non-relativistic particles are considered. Also, scattering theory is only discussed in one space dimension. In advanced quantum mechanics, these restrictions are lifted. Fixing the issues of the Dirac theory leads to a many particle theory, which in turn leads to an object, called Field operator. This is the onset of quantum field theory. The concepts of canonical quantization and functional integrals are introduced as outlook on qft. </p>
+	<p style="padding-top: 10px; padding-bottom: 40px">
+	Notes on advanced quantum mechanics, the concepts of quantum field theory and the mathematical methods of 		quantum physics.	
+	</p>
 	
 	<li > <a href="files/gr.pdf" class="notes_link"> General relativity</a></li>
-	<p style="padding-top: 20px; padding-bottom: 40px">
-	The title might be a misnomer, as the focus of these notes is not the theory of general relativity, but rather the mathematics behind it. However, the basic concepts of a beginners course on general relativity are included. An exception is the chapter about special relativity, where the attempt was made to give a description that is as coordinate free as possible with methods from (modern) differential geometry. The longest part is the appendix, covering the formal definition of tensors and Riemannian geometry amongst other things. Also a noteworthy chapter is the last one, introducing vector bundle valued differential forms almost from scratch.
+	<p style="padding-top: 10px; padding-bottom: 40px">
+	A brief introduction to general relativity, with focus on Rimannian geometry.
 	</p>
 	
 	<li > <a href="files/sst.pdf" class="notes_link"> Solid state theory</a></li>
-	<p style="padding-top: 20px; padding-bottom: 0px">
-	Solid state theory is the description of matter and its macroscopic properties from a quantum mechanical point of view. These notes give a short introduction on how to approach the description of solids from quantum mechanics.
+	<p style="padding-top: 10px; padding-bottom: 40px">
+	The fundamentals of solid state theory, with some efforts to keep the mathematics somewhat rigorous.
+	</p>
+	
+	<li > <a href="files/cstar.pdf" class="notes_link"> K-theory of C*-algebras</a></li>
+	<p style="padding-top: 10px; padding-bottom: 0px">
+	A beginner friendly approach to C*-algebras and the K-theory of C*-algebras.
 	</p>
 </ul>
 

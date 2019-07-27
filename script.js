@@ -4,5 +4,4 @@
 
 	unction showPage() {
   	document.body.classList.remove('js-loading');	}
-
-
+  	

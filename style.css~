@@ -103,19 +103,19 @@ body {
 	position: relative;
 	
 	animation-name: content_slide;
-	animation-name: content_slide;
-	animation-name: content_slide;
-	animation-name: content_slide;
+	-webkit-animation-name: content_slide;
+	-moz-animation-name: content_slide;
+	-o-animation-name: content_slide;
 	
 	animation-duration: 0.6s;
-	animation-duration: 0.6s;
-	animation-duration: 0.6s;
-	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
+	-moz-animation-duration: 0.6s;
+	-o-animation-duration: 0.6s;
 	
 	animation-timing-function: ease;
-	animation-timing-function: ease;
-	animation-timing-function: ease;
-	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+	-moz-animation-timing-function: ease;
+	-o-animation-timing-function: ease;
 	
 }
 
@@ -136,7 +136,7 @@ body {
 
 
 @media screen and (max-width: 800px){
-	#main_content{ width: 92vw;	}
+	#main_content{ width: 90vw;	}
 }
 
 

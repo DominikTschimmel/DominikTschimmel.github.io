@@ -131,7 +131,7 @@ body {
 
 @media screen and (min-width: 801px){
 	#main_content{ max-width: 800px;	}
-	#main_image{	max-height: 350px;}
+	#main_image{	max-height: 400px;}
 }
 
 

@@ -20,7 +20,7 @@
 
 
 body {
-	background-color: rgb(60, 60, 60);
+	background-color: rgb(55, 55, 55);
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -131,7 +131,7 @@ body {
 
 @media screen and (min-width: 801px){
 	#main_content{ max-width: 800px;	}
-	#main_image{	max-height: 350px;}
+	#main_image{	max-height: 400px;}
 }
 
 
@@ -147,7 +147,7 @@ body {
 
 #title{   
 	width: 100%;
-	color: rgb(80, 80, 80);
+	color: rgb(60, 60, 60);
 	font-size: 60px;
 	 font-weight: bold;
 	text-align:  center;

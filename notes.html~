@@ -26,12 +26,18 @@ Notes
 
 <div id="main_content">
 <div id="main_image">
-<img src="images/notes.jpg" style="width:100%; "> 
+<img id="image" src="images/notes.jpg" style="width:100%; "> 
 </div>
 
 
 
 <ul id="notes_list">
+	<li > <a href="files/sst.pdf" class="notes_link"> Solid state theory</a></li>
+	<p style="padding-top: 10px; padding-bottom: 40px">
+	The fundamentals of solid state theory, with some efforts to keep the mathematics somewhat rigorous.
+	</p>
+	
+
 	<li> <a href="files/aqm.pdf" class="notes_link"> Advanced quantum mechanics </a> </li>	
 	<p style="padding-top: 10px; padding-bottom: 40px">
 	Notes on advanced quantum mechanics, the concepts of quantum field theory and the mathematical methods of 		quantum physics.	
@@ -42,10 +48,6 @@ Notes
 	A brief introduction to general relativity, with focus on Rimannian geometry.
 	</p>
 	
-	<li > <a href="files/sst.pdf" class="notes_link"> Solid state theory</a></li>
-	<p style="padding-top: 10px; padding-bottom: 40px">
-	The fundamentals of solid state theory, with some efforts to keep the mathematics somewhat rigorous.
-	</p>
 	
 	<li > <a href="files/cstar.pdf" class="notes_link"> K-theory of C*-algebras</a></li>
 	<p style="padding-top: 10px; padding-bottom: 0px">

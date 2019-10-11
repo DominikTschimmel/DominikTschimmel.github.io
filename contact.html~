@@ -17,7 +17,9 @@
 		<a	class="navigation_item"   href="index.html">  Home </a>
 		<a	class="navigation_item"  href="contact.html">  Contact </a>
 		<a class="navigation_item"  href="notes.html">   Notes </a>
+		<a class="navigation_item"  href="teaching.html">   Teaching </a>
 </div>
+
 
 
 <div id="title">
@@ -30,7 +32,7 @@ Contact
 <div id="main_content">
 
 <div id="main_image">
-<img src="images/contact.jpg" style="width:100%; "> 
+<img  id="image" src="images/contact.jpg" style="width:100%; "> 
 </div>
 
 <div style="font-weight: bold; margin-bottom: 20px;"> Institut für Theoretische Physik </div>

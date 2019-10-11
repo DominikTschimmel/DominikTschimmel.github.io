@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Teaching </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>  
+</head>
+
+
+<body>
+
+
+
+
+
+<div id ="navigation">
+		<a	class="navigation_item"   href="index.html">  Home </a>
+		<a	class="navigation_item"  href="contact.html">  Contact </a>
+		<a class="navigation_item"  href="notes.html">   Notes </a>
+		<a class="navigation_item"  href="teaching.html">   Teaching </a>
+</div>
+
+
+
+
+
+
+<div id="title">
+Teaching
+</div>
+
+
+
+
+
+
+
+<div id="main_content">
+<div id="main_image">
+<img id="image" src="images/teaching.jpg" style="width:100%; "> 
+</div>
+
+
+
+<h2 > In general </h2>
+
+<p>
+A common question is, if the solutions to the exercise sheets can be handed in by mail.  Handing in paper sheets is usually the best practice. Unless it doesn’t get out of hand, I do also accept the solutions to be sent by email. Please note however, that it is still your responsibility that your mail reaches me, and that it reaches me on time. For that purpose use the subject: &quot exercise sheet &quot. </p>
+
+<p>If you want/have to send your sheets by mail, please use the pdf format. The best solution would be to scan your sheets (<a href="images/optimal.pdf">example</a>). A scanner can be found in the CIP lab. It is also an option to use your smartphone camera. In this case, use any of the various scanner apps to adjust the perspective (<a href="images/semi.pdf">example</a>). Be aware, that I do not correct what I cannot read, so avoid blurry images (<a href="images/bad_quality.jpg">example</a>).</p>
+ 
+<h3 style="padding-top: 40px;"> Current teaching </h3> 
+<ul style="padding-left: 20px;">
+<li>  <a href="https://mathmeth.wordpress.com/"> Mathematische Methoden</a>  </li>
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

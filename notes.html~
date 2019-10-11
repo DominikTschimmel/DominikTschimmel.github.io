@@ -32,6 +32,11 @@ Notes
 
 
 <ul id="notes_list">
+	<li > <a href="files/notation.pdf" class="notes_link"> Mathematics notation in physics</a></li>
+	<p style="padding-top: 10px; padding-bottom: 40px">
+	The notation used in physics can be sloppy to the point of abuse of notation. This short report, intended for the beginning undergraduate level, tries to clarify some of the most common notations.
+	</p>
+
 	<li > <a href="files/sst.pdf" class="notes_link"> Solid state theory</a></li>
 	<p style="padding-top: 10px; padding-bottom: 40px">
 	The fundamentals of solid state theory, with some efforts to keep the mathematics somewhat rigorous.

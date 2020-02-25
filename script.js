@@ -1,8 +1,82 @@
-	var img = document.querySelector("image");
-	document.body.classList.add('js-loading');
+$(document).ready(function(){
+	
+	$("#title").fadeOut(1);
+	$("#content_1").animate({ opacity : "0"}, 1);
+	$("#content_1").load("content/Home.html",'f' + (Math.random()*1000000));
+	$("#content_1").animate({ top : "100vh"}, 1);
+	$("#content_1").animate({top: "0vh", opacity: "1"},500); 
+	$("#title").fadeIn(500);
+   
+	Position = 1;
 
-	img.addEventListener("load", showPage);
+	$("#Home").click(function() {
+		get_content("content/Home.html","Welcome",Position -1);
+		Position = 1;
+	});	
+	
+	$("#About").click(function() {
+		get_content("content/About_Me.html","Short CV",Position -2);
+		Position = 2;
+	});		
+	
+	$("#Contact").click(function() {
+		get_content("content/Contact.html","Contact",Position -3);
+		Position = 3;
+	});	
 
-	unction showPage() {
-  	document.body.classList.remove('js-loading');	}
-  	
+	$("#Notes").click(function() {
+		get_content("content/Notes.html","Notes",Position -4);
+		Position = 4;
+	});	
+	
+	$("#Other_Stuff").click(function() {
+		get_content("content/Other_Stuff.html","Other Stuff",Position -5);
+		Position = 5;
+	});	
+
+ 
+});
+	
+
+
+var Position = 1;
+
+function get_content(X,t,d) {
+			
+		if (d<0) {
+		$("#content_1").animate({left: "-20vw", opacity : "0"}, 150);	
+		$("#title").fadeOut(150);
+		setTimeout(function () {
+			$("#content_1").load(X,'f' + (Math.random()*1000000));
+			$("#title").html(t);
+			$("#content_1").animate({left: "20vw"}, 10);	
+			$("#title").fadeIn(150);
+			$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+		}, 150);
+	}
+		
+		if (d>0) {
+		$("#content_1").animate({left: "+20vw", opacity : "0"}, 150);	
+		$("#title").fadeOut(150);
+		setTimeout(function () {
+			$("#content_1").load(X,'f' + (Math.random()*1000000));
+			$("#title").html(t);
+			$("#content_1").animate({left: "-20vw"}, 10);
+			$("#title").fadeIn(150);	
+			$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+		}, 150);
+	}
+			
+	if (d==0) {
+		$("#title").fadeOut(1);
+		$("#content_1").animate({ opacity : "0"}, 1);
+		$("#content_1").animate({ top : "100vh"}, 1);
+		$("#content_1").animate({top: "0vh", opacity: "1"},500); 
+		$("#title").fadeIn(500);
+	}	
+		
+}
+
+
+
+

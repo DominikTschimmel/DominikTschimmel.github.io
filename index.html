@@ -6,7 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="script.js"></script>  
+	<link rel="prefetch" href="images/About.jpg">
+	<link rel="prefetch" href="images/Contact.jpg">
+	<link rel="prefetch" href="images/Notes.jpg">
+	<link rel="prefetch" href="images/Other_Stuff.jpg">
 	<meta name="google-site-verification" content="sU6FCE62NOUK-tdcXifm_rBMUoKJ6AFpWuBIaQ9J_9A" />
 </head>
 
@@ -15,21 +20,20 @@
 
 
 
-
 <div id ="navigation">
-		<a	class="navigation_item"   href="index.html">  Home </a>
-		<a	class="navigation_item"  href="contact.html">  Contact </a>
-		<a class="navigation_item"  href="notes.html">   Notes </a>
-		<a class="navigation_item"  href="teaching.html">   Teaching </a>
+		
+		<a	class="navigation_item" id="Home">  Home </a>
+		<a	class="navigation_item" id="About">  Short CV</a>
+		<a class="navigation_item"  id="Contact">  Contact  </a>
+		<a class="navigation_item"  id ="Notes">   Notes </a>
+		<a class="navigation_item"  id ="Other_Stuff">   Other Stuff </a>
 </div>
-
-
 
 
 
 
 <div id="title">
-About me
+Welcome
 </div>
 
 
@@ -38,22 +42,7 @@ About me
 
 
 
-<div id="main_content">
-<div id="main_image">
-<img id="image" src="images/about_me.jpg" style="width:100%; "> 
-</div>
-
-
-<p>
-I am a student of physics at the university of cologne, in the middle of my master’s thesis. Currently I am interested in the bulk boundary correspondence of higher order topological insulators and the K-theoretic description thereof. 
-</p>
-
-<p style="margin-top: 10px">
-During the literature research for my bachelor' s thesis, I encountered numerous pay walls and membership restrictions. Although the university has contracts with the various institutes and publishers, it still adds a level of annoyance. As much as I do understand the need for proper payment, I myself believe that science has to be available for everyone. 
-For that reason I have decided to upload the notes that have seen enough care to have proper (enough) citation.
-</p>
-
-</div>
+<div class="main_content" id="content_1"></div>
 
 
 

@@ -2,10 +2,12 @@ $(document).ready(function(){
 	
 	$("#title").fadeOut(1);
 	$("#content_1").animate({ opacity : "0"}, 1);
-	$("#content_1").load("content/Home.html",'f' + (Math.random()*1000000));
-	$("#content_1").animate({ top : "100vh"}, 1);
-	$("#content_1").animate({top: "0vh", opacity: "1"},500); 
-	$("#title").fadeIn(500);
+	$("#content_1").load("content/Home.html",'f' + (Math.random()*1000000), function () {
+		$("#content_1").animate({ top : "100vh"}, 1);
+		$("#content_1").animate({top: "0vh", opacity: "1"},500); 
+		$("#title").fadeIn(500);
+	});
+
    
 	Position = 1;
 
@@ -47,11 +49,12 @@ function get_content(X,t,d) {
 		$("#content_1").animate({left: "-20vw", opacity : "0"}, 150);	
 		$("#title").fadeOut(150);
 		setTimeout(function () {
-			$("#content_1").load(X,'f' + (Math.random()*1000000));
-			$("#title").html(t);
-			$("#content_1").animate({left: "20vw"}, 10);	
-			$("#title").fadeIn(150);
-			$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+			$("#content_1").load(X,'f' + (Math.random()*1000000) , function () {     
+				$("#title").html(t);
+				$("#content_1").animate({left: "20vw"}, 10);	
+				$("#title").fadeIn(150);
+				$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+			});
 		}, 150);
 	}
 		
@@ -59,11 +62,12 @@ function get_content(X,t,d) {
 		$("#content_1").animate({left: "+20vw", opacity : "0"}, 150);	
 		$("#title").fadeOut(150);
 		setTimeout(function () {
-			$("#content_1").load(X,'f' + (Math.random()*1000000));
-			$("#title").html(t);
-			$("#content_1").animate({left: "-20vw"}, 10);
-			$("#title").fadeIn(150);	
-			$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+			$("#content_1").load(X,'f' + (Math.random()*1000000), function () { 
+				$("#title").html(t);
+				$("#content_1").animate({left: "-20vw"}, 10);
+				$("#title").fadeIn(150);	
+				$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+			});
 		}, 150);
 	}
 			

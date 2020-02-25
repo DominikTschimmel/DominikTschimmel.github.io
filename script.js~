@@ -47,11 +47,12 @@ function get_content(X,t,d) {
 		$("#content_1").animate({left: "-20vw", opacity : "0"}, 150);	
 		$("#title").fadeOut(150);
 		setTimeout(function () {
-			$("#content_1").load(X,'f' + (Math.random()*1000000));
+			$("#content_1").load(X,'f' + (Math.random()*1000000) , function () {     
 			$("#title").html(t);
 			$("#content_1").animate({left: "20vw"}, 10);	
 			$("#title").fadeIn(150);
 			$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+			});
 		}, 150);
 	}
 		
@@ -59,11 +60,12 @@ function get_content(X,t,d) {
 		$("#content_1").animate({left: "+20vw", opacity : "0"}, 150);	
 		$("#title").fadeOut(150);
 		setTimeout(function () {
-			$("#content_1").load(X,'f' + (Math.random()*1000000));
+			$("#content_1").load(X,'f' + (Math.random()*1000000), function () { 
 			$("#title").html(t);
 			$("#content_1").animate({left: "-20vw"}, 10);
 			$("#title").fadeIn(150);	
 			$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
+			});
 		}, 150);
 	}
 			

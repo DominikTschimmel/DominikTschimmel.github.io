@@ -8,6 +8,18 @@ $(document).ready(function(){
 		$("#title").fadeIn(500);
 	});
 
+    var img1 = new Image();
+    img1.src = "images/About.jpg";
+    
+    var img2 = new Image();
+    img2.src = "images/Contact.jpg";
+    
+    var img3 = new Image();
+    img3.src = "images/Notes.jpg";
+
+	 var img4 = new Image();
+    img4.src = "images/Other_Stuff.jpg";
+ 
    
 	Position = 1;
 

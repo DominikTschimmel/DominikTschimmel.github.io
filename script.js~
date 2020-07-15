@@ -1,7 +1,7 @@
-const show_time = 180;
-const hide_time = 180;
-const slide_up_time = 300;
-const delay = 350;
+const show_time = 150;
+const hide_time = 150;
+const slide_up_time = 400;
+const delay = 150;
 var Content_id  = "#content";
 var Title_id = "#title";
 var Position = 0;
@@ -57,16 +57,20 @@ function navigation(target_index, current_index) {
 	if (dif>0) {
 		slide_out_right();
 		setTimeout(function() {
-				load_content(Pages[target_index],Titles[target_index]);
-			slide_in_left();
+			load_content(Pages[target_index],Titles[target_index]);
 		}, delay);
+		setTimeout(function() {
+			slide_in_left();
+		}, 2*delay);
 	}
 	if (dif<0) {
 		slide_out_left();
 		setTimeout(function() {
 			load_content(Pages[target_index],Titles[target_index]);
-			slide_in_right();
 		}, delay);
+		setTimeout(function() {
+			slide_in_right();
+		}, 2*delay);
 	}
 	if (dif==0) {
 		slide_up();

@@ -1,7 +1,7 @@
-const show_time = 150;
-const hide_time = 150;
+const show_time = 180;
+const hide_time = 180;
 const slide_up_time = 300;
-const delay = 150;
+const delay = 350;
 var Content_id  = "#content";
 var Title_id = "#title";
 var Position = 0;
@@ -125,9 +125,6 @@ $(document).ready(function(){
 });
 
 
-
-
-// touch controls
 
 
 

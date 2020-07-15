@@ -22,11 +22,9 @@ function slide_out_right() {
 	}
 
 
-function load_and_delay(Content,Title) {
-	setTimeout(function() {
+function load_content(Content,Title) {
   		$(Content_id).load(Content,'f' + (Math.random()*1000000));
   		$(Title_id).html(Title);
-}, delay);
 }
 
 function slide_in_left() {
@@ -58,13 +56,17 @@ function navigation(target_index, current_index) {
 	
 	if (dif>0) {
 		slide_out_right();
-		load_and_delay(Pages[target_index],Titles[target_index]);
-		slide_in_left();
+		setTimeout(function() {
+				load_content(Pages[target_index],Titles[target_index]);
+			slide_in_left();
+		}, delay);
 	}
 	if (dif<0) {
 		slide_out_left();
-		load_and_delay(Pages[target_index],Titles[target_index]);
-		slide_in_right();
+		setTimeout(function() {
+			load_content(Pages[target_index],Titles[target_index]);
+			slide_in_right();
+		}, delay);
 	}
 	if (dif==0) {
 		slide_up();
@@ -73,13 +75,19 @@ function navigation(target_index, current_index) {
 }
 
 
-$(Title_id).fadeOut(1);
-$(Content_id).animate({ opacity : "0"}, 1);
-load_and_delay(Pages[0],Titles[0]);
+
 
 
 $(document).ready(function(){
-	slide_up()
+	$(Title_id).fadeOut(1);
+	$(Content_id).animate({ opacity : "0"}, 1);
+	
+	setTimeout(function() {
+		load_content(Pages[0],Titles[0]);
+		slide_up()
+	}, delay);	
+	
+
 	
    
 	Position = 0;

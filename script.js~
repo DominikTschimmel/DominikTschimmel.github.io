@@ -1,6 +1,6 @@
 const show_time = 150;
 const hide_time = 150;
-const slide_up_time = 400;
+const slide_up_time = 300;
 const delay = 150;
 var Content_id  = "#content";
 var Title_id = "#title";

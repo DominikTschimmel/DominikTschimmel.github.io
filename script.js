@@ -2,7 +2,7 @@ const show_time = 150;
 const hide_time = 150;
 const slide_up_time = 300;
 const delay = 150;
-var Content_id  = "#content_1";
+var Content_id  = "#content";
 var Title_id = "#title";
 var Position = 0;
 
@@ -127,18 +127,20 @@ $(document).ready(function(){
 
 
 
-// touch controls
-
-
 
 // load images in the cache 
 
 
+
     var img1 = new Image();
+    var img2 = new Image();
+    var img3 = new Image();
+    var img4 = new Image();
+    
     img1.src = "images/About.jpg";
-    img1.src = "images/Contact.jpg";
-    img1.src = "images/Notes.jpg";
-    img1.src = "images/Other_Stuff.jpg";
+    img2.src = "images/Contact.jpg";
+    img3.src = "images/Notes.jpg";
+    img4.src = "images/Other_Stuff.jpg";
  
 
 

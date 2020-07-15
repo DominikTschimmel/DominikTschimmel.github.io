@@ -112,6 +112,8 @@ body {
 }
 
 
+
+
 @media screen and (min-width: 821px){
 	.main_content{ max-width: 800px;	}
 	.main_image{	max-height: 400px;}

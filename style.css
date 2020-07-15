@@ -111,6 +111,9 @@ body {
 
 }
 
+#content{  opacity:0; }
+
+
 
 @media screen and (min-width: 821px){
 	.main_content{ max-width: 800px;	}

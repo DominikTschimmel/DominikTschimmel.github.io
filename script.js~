@@ -1,97 +1,138 @@
-$(document).ready(function(){
+const show_time = 150;
+const hide_time = 150;
+const slide_up_time = 300;
+const delay = 150;
+var Content_id  = "#content_1";
+var Title_id = "#title";
+var Position = 0;
+
+var Pages = ["content/Home.html", "content/About_Me.html", "content/Contact.html",  "content/Notes.html", "content/Other_Stuff.html" ];
+var Titles = ["Welcome", "Short CV", "Contact", "Notes", "Other Stuff"];
+
+
+function slide_out_left() {
+		$(Content_id).animate({left: "-20vw", opacity : "0"}, hide_time);	
+		$(Title_id).fadeOut(hide_time);
+	}
 	
-	$("#title").fadeOut(1);
-	$("#content_1").animate({ opacity : "0"}, 1);
-	$("#content_1").load("content/Home.html",'f' + (Math.random()*1000000), function () {
-		$("#content_1").animate({ top : "100vh"}, 1);
-		$("#content_1").animate({top: "0vh", opacity: "1"},500); 
-		$("#title").fadeIn(500);
-	});
+	
+function slide_out_right() {
+		$(Content_id).animate({left: "+20vw", opacity : "0"}, hide_time);	
+		$(Title_id).fadeOut(hide_time);
+	}
 
-    var img1 = new Image();
-    img1.src = "images/About.jpg";
-    
-    var img2 = new Image();
-    img2.src = "images/contact.jpg";
-    
-    var img3 = new Image();
-    img3.src = "images/notes.jpg";
 
-	 var img4 = new Image();
-    img4.src = "images/Other_Stuff.jpg";
- 
+function load_and_delay(Content,Title) {
+	setTimeout(function() {
+  		$(Content_id).load(Content,'f' + (Math.random()*1000000));
+  		$(Title_id).html(Title);
+}, delay);
+}
+
+function slide_in_left() {
+		$(Content_id).animate({left: "-20vw", opacity : "0"}, 1);
+		$(Content_id).animate({left: "0vw", opacity : "1"}, show_time);	
+		$(Title_id).fadeIn(hide_time);
+}
+
+
+function slide_in_right() {
+		$(Content_id).animate({left: "+20vw", opacity : "0"}, 1);
+		$(Content_id).animate({left: "0vw", opacity : "1"}, show_time);	
+		$(Title_id).fadeIn(hide_time);
+}
+
+function slide_up() {
+		$(Title_id).fadeOut(1);
+		$(Content_id).animate({ opacity : "0"}, 1);
+		$(Content_id).animate({ top : "100vh"}, 1);
+		$(Content_id).animate({top: "0vh", opacity: "1"},slide_up_time); 
+		$(Title_id).fadeIn(slide_up_time);
+}
+
+
+
+
+function navigation(target_index, current_index) {
+	dif = current_index - target_index;
+	
+	if (dif>0) {
+		slide_out_right();
+		load_and_delay(Pages[target_index],Titles[target_index]);
+		slide_in_left();
+	}
+	if (dif<0) {
+		slide_out_left();
+		load_and_delay(Pages[target_index],Titles[target_index]);
+		slide_in_right();
+	}
+	if (dif==0) {
+		slide_up();
+	}	
+	
+}
+
+
+$(Title_id).fadeOut(1);
+$(Content_id).animate({ opacity : "0"}, 1);
+load_and_delay(Pages[0],Titles[0]);
+
+
+$(document).ready(function(){
+	slide_up()
+	
    
-	Position = 1;
+	Position = 0;
 
 	$("#Home").click(function() {
-		get_content("content/Home.html","Welcome",Position -1);
-		Position = 1;
+		navigation(0,Position);
+		Position = 0;
 	});	
 	
 	$("#About").click(function() {
-		get_content("content/About_Me.html","Short CV",Position -2);
-		Position = 2;
+		navigation(1,Position);
+		Position = 1;
 	});		
 	
 	$("#Contact").click(function() {
-		get_content("content/Contact.html","Contact",Position -3);
-		Position = 3;
+		navigation(2,Position);
+		Position = 2;
 	});	
 
 	$("#Notes").click(function() {
-		get_content("content/Notes.html","Notes",Position -4);
-		Position = 4;
+		navigation(3,Position);
+		Position = 3;
 	});	
 	
 	$("#Other_Stuff").click(function() {
-		get_content("content/Other_Stuff.html","Other Stuff",Position -5);
-		Position = 5;
+		navigation(4,Position);
+		Position = 4;
 	});	
+
+
+
+
 
  
 });
-	
 
 
-var Position = 1;
 
-function get_content(X,t,d) {
-			
-		if (d<0) {
-		$("#content_1").animate({left: "-20vw", opacity : "0"}, 150);	
-		$("#title").fadeOut(150);
-		setTimeout(function () {
-			$("#content_1").load(X,'f' + (Math.random()*1000000) , function () {     
-				$("#title").html(t);
-				$("#content_1").animate({left: "20vw"}, 10);	
-				$("#title").fadeIn(150);
-				$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
-			});
-		}, 150);
-	}
-		
-		if (d>0) {
-		$("#content_1").animate({left: "+20vw", opacity : "0"}, 150);	
-		$("#title").fadeOut(150);
-		setTimeout(function () {
-			$("#content_1").load(X,'f' + (Math.random()*1000000), function () { 
-				$("#title").html(t);
-				$("#content_1").animate({left: "-20vw"}, 10);
-				$("#title").fadeIn(150);	
-				$("#content_1").animate({left: "0vw", opacity: "1"} , 150);	
-			});
-		}, 150);
-	}
-			
-	if (d==0) {
-		$("#title").fadeOut(1);
-		$("#content_1").animate({ opacity : "0"}, 1);
-		$("#content_1").animate({ top : "100vh"}, 1);
-		$("#content_1").animate({top: "0vh", opacity: "1"},500); 
-		$("#title").fadeIn(500);
-	}	
-		
-}
+
+// touch controls
+
+
+
+// load images in the cache 
+
+
+    var img1 = new Image();
+    img1.src = "images/About.jpg";
+    img1.src = "images/Contact.jpg";
+    img1.src = "images/Notes.jpg";
+    img1.src = "images/Other_Stuff.jpg";
+ 
+
 
 
 

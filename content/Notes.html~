@@ -8,19 +8,19 @@ Some of the notes I created during my studies and for tutoring that have proper 
 </div>
 
 <ul style="list-style-type: disc; margin-left: 30px; margin-top: 30px;" >
-	<li style="margin-bottom: 25px;"> <a href="files/notation.pdf" target="_blank" style="color: rgb(0, 0, 0); font-size: 18px; cursor: pointer; text-decoration: none;  font-weight: bold; "> Mathematical notations in physics</a></li>
+	<li style="margin-bottom: 25px;"> <a href="files/notation.pdf" target="_blank" style=" cursor: pointer; text-decoration: none;  font-weight: bold; "> Mathematical notations in physics</a></li>
 
 
-	<li style="margin-bottom: 25px;"> <a href="files/sst.pdf" target="_blank" style="color: rgb(0, 0, 0); font-size: 18px; cursor: pointer; text-decoration: none;  font-weight: bold;"> Solid state theory</a></li>
+	<li style="margin-bottom: 25px;"> <a href="files/sst.pdf" target="_blank" style=" cursor: pointer; text-decoration: none;  font-weight: bold;"> Solid state theory</a></li>
 	
 
-	<li style="margin-bottom: 25px;"> <a href="files/aqm.pdf" target="_blank" style="color: rgb(0, 0, 0); font-size: 18px; cursor: pointer; text-decoration: none;  font-weight: bold;"> Advanced quantum mechanics </a> </li>	
+	<li style="margin-bottom: 25px;"> <a href="files/aqm.pdf" target="_blank" style=" cursor: pointer; text-decoration: none;  font-weight: bold;"> Advanced quantum mechanics </a> </li>	
 	
-	<li style="margin-bottom: 25px;"> <a href="files/gr.pdf"  target="_blank"style="color: rgb(0, 0, 0); font-size: 18px; cursor: pointer; text-decoration: none;  font-weight: bold; "> General relativity</a></li>
+	<li style="margin-bottom: 25px;"> <a href="files/gr.pdf"  target="_blank"style=" font-size: 18px; cursor: pointer; text-decoration: none;  font-weight: bold; "> General relativity</a></li>
 
 	
 	
-	<li style="margin-bottom: 25px;"> <a href="files/cstar.pdf" target="_blank"  style="color: rgb(0, 0, 0); font-size: 18px; cursor: pointer; text-decoration: none;  font-weight: bold;"> K-theory of C*-algebras</a></li>
+	<li style="margin-bottom: 25px;"> <a href="files/cstar.pdf" target="_blank"  style="  cursor: pointer; text-decoration: none;  font-weight: bold;"> K-theory of C*-algebras</a></li>
 
 </ul>
 

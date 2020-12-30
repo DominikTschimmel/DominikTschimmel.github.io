@@ -80,7 +80,8 @@ body {
  	width: 100%;
     display: block;
   	overflow: auto;
-  	white-space: nowrap;
+    white-space: nowrap;
+
     }
 }
 
@@ -129,6 +130,7 @@ body {
         display: inline;
         border-width: 0px 1px 0px 1px;
         border-style: solid;
+        font-size: 150%;
     }
 
 }
@@ -147,7 +149,8 @@ body {
     position: fixed;
     top: 0;
     height: 65px;
-    padding: 10px 0px 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 30pt;
     font-weight: bold;
     color: #1f2020;

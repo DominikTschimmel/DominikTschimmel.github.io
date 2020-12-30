@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu_bar").load("../menu.html", function(){
+                'f' + (Math.random() * 1000000);
+                document.getElementById("other_stuff").classList.add("menu_item_active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="menu_strip">
+        <img src="../images/logo.jpg" id="logo">
+    </div>
+
+
+    <div id="menu_bar">
+        <span class="menu_heading">  </span>
+    </div>
+
+
+
+    <div id="title_bar">
+        Other Stuff
+    </div>
+
+    <div id="main_frame">
+        <div id="content_frame">
+            <div class="main_image">
+                <img src="../images/other_stuff.jpg" style="width:100%; ">
+            </div>
+
+            <div class = "main_text">
+                <p>
+                    Some LaTex templates (among others, those that were used to create the notes) can be found on my GitHub
+                    repository
+                </p>
+    
+                <p style="padding-top: 10px; padding-left: 10px; "> <a
+                        style="font-weight: bold; text-decoration: none; cursor: pointer; "
+                        href="https://github.com/DominikTschimmel/LaTex_Template" target="_blank"> LaTex_Template </a> 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

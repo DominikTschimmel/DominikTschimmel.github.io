@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu_bar").load("../menu.html", function(){
+                'f' + (Math.random() * 1000000);
+                document.getElementById("home").classList.add("menu_item_active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="menu_strip">
+        <img src="../images/logo.jpg" id="logo">
+    </div>
+
+
+    <div id="menu_bar">
+        <span class="menu_heading">  </span>
+    </div>
+
+
+
+    <div id="title_bar">
+        Home
+    </div>
+
+    <div id="main_frame">
+        <div id="content_frame">
+            <div class="main_image">
+                <img src="../images/home.jpg" style="width:100%; ">
+            </div>
+
+
+            <div class="main_text">
+                <p>
+                    Hi, my name is Dominik and I am a theoretical physicist. My main interests have been mathematical
+                    physics and mathematics on the one hand but also computational physics and programming on the other
+                    hand.
+                    Lately this has lead me to a collaboration with the <a
+                        style="font-weight: bold; text-decoration: none; cursor: pointer; "
+                        href="http://painsignaling.uni-koeln.de/" target="_blank"> research group: translational
+                        pain</a>
+                    at the university of Cologne, where we investigate antibodies using computational methods.
+
+
+                </p>
+
+                <p style="padding-top: 14px;">
+                    In the last years, throughout my education, I have greatly benefited from free and open-source
+                    software. May it be the Linux operating system or the Typesetting system LaTex.
+                    Partly because of this, I have decided to upload some of the projects I have been working on.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

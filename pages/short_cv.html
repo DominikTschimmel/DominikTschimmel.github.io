@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu_bar").load("../menu.html", function(){
+                'f' + (Math.random() * 1000000);
+                document.getElementById("short_cv").classList.add("menu_item_active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="menu_strip">
+        <img src="../images/logo.jpg" id="logo">
+    </div>
+
+
+    <div id="menu_bar">
+        <span class="menu_heading"></span>
+    </div>
+
+
+
+    <div id="title_bar">
+        Short CV
+    </div>
+
+    <div id="main_frame">
+        <div id="content_frame">
+            <div class="main_image">
+                <img src="../images/short_cv.jpg" style="width:100%; ">
+            </div>
+
+            <div class="main_text">
+                <div style="text-align: center;">
+                    <div style="display: inline-block;">
+                        <h1> Career and Employment </h1>
+                    </div>
+                </div>
+
+                <table style="padding-left: 10px; padding-top: 20px;">
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px;"> Currently: </td>
+                        <td> Collaboration with the <a
+                                style="font-weight: bold; text-decoration: none; cursor: pointer; "
+                                href="http://painsignaling.uni-koeln.de/" target="_blank"> research group: translational
+                                pain</a>.
+                        </td>
+                    </tr>
+                </table>
+
+                <div style="text-align: center;  padding-top: 40px;">
+                    <div style="display: inline-block;">
+                        <h1> Education </h1>
+                    </div>
+                </div>
+
+                <table style="padding-left: 10px; padding-top: 20px;">
+
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px; padding-top: 20px;"> 2017-2020: </td>
+                        <td style="padding-top: 20px;"> M.Sc. in physics, university of Cologne </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px; padding-top: 20px;"> 2014-2017: </td>
+                        <td style="padding-top: 20px;"> B.Sc. in physics, university of Cologne </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px; padding-top: 20px;"> 2011-2014: </td>
+                        <td style="padding-top: 20px;"> Abitur, Brühl </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px; padding-top: 20px;"> 2011: </td>
+                        <td style="padding-top: 20px;"> Realschule, Bergheim </td>
+                    </tr>
+
+
+                </table>
+
+
+                <div style="text-align: center; padding-top: 40px;">
+                    <div style="display: inline-block;">
+                        <h1> Teaching </h1>
+                    </div>
+                </div>
+
+                <table style="padding-left: 10px; padding-top: 20px;">
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px;"> 2019/20: </td>
+                        <td> Mathematische Methoden </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; padding-right: 30px; padding-top: 20px;"> 2018: </td>
+                        <td style="padding-top: 20px;"> Seminar: <q> Tutor*innenqualifizierung für die Fachwissenschaft
+                                Physik </q> </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

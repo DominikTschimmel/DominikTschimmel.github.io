@@ -11,11 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#menu_bar").load("../menu.html", function(){
-                'f' + (Math.random() * 1000000);
                 document.getElementById("contact").classList.add("menu_item_active");
             });
-        });
     </script>
 </head>
 
@@ -27,8 +24,15 @@
 
 
     <div id="menu_bar">
-        <span class="menu_heading"> </span>
-    </div>
+	<span class="menu_heading">  About me  </span>
+	<a class = "menu_item" id="home" href = "/pages/home.html"> Home </a>
+	<a class = "menu_item" id="short_cv" href = "/pages/short_cv.html"> Short CV </a>
+	<a class = "menu_item" id="contact" href = "/pages/contact.html"> Contact </a>
+
+	<span class="menu_heading"> Goodies </span>
+	<a class = "menu_item" id="notes" href = "/pages/notes.html"> Notes </a>
+	<a class = "menu_item" id="other_stuff" href = "/pages/other_stuff.html"> Other Stuff </a>
+	</div>
 
 
 
@@ -57,7 +61,7 @@
                     <tr>
                         <td style="font-weight: bold; padding-right: 30px; padding-top: 10px;"> E-mail: </td>
                         <td style="padding-top: 10px;"> <a
-                                href="mailto:d.tschimmel@smail.uni-koeln.de">d.tschimmel@smail.uni-koeln.de</a> </td>
+                                href="mailto:.dominik.tschimmel@uk-koeln.de">dominik.tschimmel@uk-koeln.de</a> </td>
                     </tr>
 
                     <tr>

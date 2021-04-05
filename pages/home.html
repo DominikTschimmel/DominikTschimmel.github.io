@@ -11,11 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#menu_bar").load("../menu.html", function(){
-                'f' + (Math.random() * 1000000);
                 document.getElementById("home").classList.add("menu_item_active");
             });
-        });
     </script>
 </head>
 
@@ -27,13 +24,20 @@
 
 
     <div id="menu_bar">
-        <span class="menu_heading">  </span>
-    </div>
+	<span class="menu_heading"> About me  </span>
+	<a class = "menu_item" id="home" href = "/pages/home.html"> Home </a>
+	<a class = "menu_item" id="short_cv" href = "/pages/short_cv.html"> Short CV </a>
+	<a class = "menu_item" id="contact" href = "/pages/contact.html"> Contact </a>
+
+	<span class="menu_heading"> Goodies </span>
+	<a class = "menu_item" id="notes" href = "/pages/notes.html"> Notes </a>
+	<a class = "menu_item" id="other_stuff" href = "/pages/other_stuff.html"> Other Stuff </a>
+	    </div>
 
 
 
     <div id="title_bar">
-        Home
+        About me
     </div>
 
     <div id="main_frame">
@@ -44,25 +48,17 @@
 
 
             <div class="main_text">
-                <p>
-                    Hi, my name is Dominik and I am a theoretical physicist. My main interests have been mathematical
-                    physics and mathematics on the one hand but also computational physics and programming on the other
-                    hand.
-                    Lately this has lead me to a collaboration with the <a
-                        style="font-weight: bold; text-decoration: none; cursor: pointer; "
-                        href="http://painsignaling.uni-koeln.de/" target="_blank"> research group: translational
-                        pain</a>
-                    at the university of Cologne, where we investigate antibodies using computational methods.
+                
+				<h3> Who am I? </h3>
+				<p style="margin-top: 1em;"> My name is Dominik. I have studied physics at the university of cologne with primary focus on theoretical/mathematical physics. Currently I am working on my PhD thesis at the  <a style="font-weight: bold; text-decoration: none; cursor: pointer; " href="http://painsignaling.uni-koeln.de/" target="_blank"> research group: translational pain</a>.  </p>
+				
+				<h3 style="margin-top: 1em;"> What are my research intersts? </h3>
+				<p style="margin-top: 1em;">
+                Most generally stated, my research interests revolve around the application of pure mathematics to natural phenomena, e.g. mathematical/theoretical physics. Recent changes in my life have directed me towards the applications of probability theory and statistical physics in the domain of biology. My current PhD project tires to apply the aforementioned methods to increase the information gained from  signal based microscopy/imaging. This project nicely integrates in my second area of interest, computational physics and programming. </p>
 
 
-                </p>
-
-                <p style="padding-top: 14px;">
-                    In the last years, throughout my education, I have greatly benefited from free and open-source
-                    software. May it be the Linux operating system or the Typesetting system LaTex.
-                    Partly because of this, I have decided to upload some of the projects I have been working on.
-                </p>
-
+			<h3  style="margin-top: 1em;">Why this webpage? </h3>
+			Since the start of my bachelor's degree, I have greatly benefited form the various open source projects, be it the Linux operation system, my daily driver, the LaTeX typesetting system, or various other programs. Although I do not favour the militant open source movement, I do think that knowledge should be a common good. As such, this website also serves the purpose of distributing some of my projects back into the general public. 
             </div>
         </div>
     </div>

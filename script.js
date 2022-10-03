@@ -1,26 +1,63 @@
-// load images in the cache 
+document.body.classList.add('page-loading');
+
+window.addEventListener("load", remove_loading);
+
+function remove_loading() {
+  document.body.classList.remove('page-loading');
+}    
 
 
- 	var img1 = new Image();
-    var img2 = new Image();
-    var img3 = new Image();
-    var img4 = new Image();
+
     
-    img1.src = "images/About.jpg";
-    img2.src = "images/Contact.jpg";
-    img3.src = "images/Notes.jpg";
-    img4.src = "images/Other_Stuff.jpg";
-    
-    
-	
-	
+function toggle_menu(){
+   var menu_bar = document.getElementById("menu_bar");
+   var logo = document.getElementById("logo");
+
+   if (menu_bar.style.display === "none"){
+      menu_bar.style.display = "block";
+      logo.style.display = "block";
+
+      var left = -300;
+      var change = 28;
+
+      function move_in(){
+         if (left >= 0){
+            clearInterval(interval)
+         } else {
+            change = Math.max(1,change -1);
+            left = Math.min(left + change,0);
+            menu_bar.style.left = left + "px";
+            logo.style.left = left + "px";
+         }
+      }
+
+      interval = setInterval(move_in,5);
+
+   } else {
+      var left = 0;
+      var change = 0;
+
+      function move_out(){
+         if (left <= -300){
+            menu_bar.style.display = "none";
+            logo.style.display = "none";
+            clearInterval(interval)
+         } else {
+            change = Math.min(28,change +1);
+            left = Math.max(left - change,-300);
+            menu_bar.style.left = left + "px";
+            logo.style.left = left + "px";
+         }
+      }
+
+      interval = setInterval(move_out,5);
+
+   }
+}	
 
 
 
 
-
-
- 
 
 
 
